@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
 <head>
     <script src="./assets/color-modes.js"></script>
 
@@ -14,7 +14,7 @@
     <link href="./styles/cover.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-     <!-- <link href="./styles/style.css" rel="stylesheet"> -->
+     <link href="./styles/style.css" rel="stylesheet">
 
     <style>
         .bd-placeholder-img {
@@ -151,8 +151,8 @@
 
     </div>
 
-    <!-- Navbar and Home Page Content -->
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <!-- Navbar -->
         <header class="mb-auto">
           <div>
             <h3 class="float-md-start mb-0">Spaceful</h3>
@@ -164,13 +164,22 @@
           </div>
         </header>
       
+        <!-- Main Content -->
         <main class="px-3">
             <h1>Welcome to Spaceful</h1>
             <p class="lead">Explore the universe</p>
         </main>
 
+        <div id="apod"></div>
+
+        <!-- Footer -->
+        <footer class="mt-auto text-white-50">
+            <p>Spaceful &copy; 2024</p>
+        </footer>
+
     </div>
 
-    <script src="./assets//bootstrap.bundle.min.js"></script>
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+    <script src="./apod.js"></script>
 </body>
 </html>
