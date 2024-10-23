@@ -27,10 +27,7 @@ function appendData(data) {
 
     div.classList.add("col-lg-4");
     div.innerHTML = `
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>${data.name}</title>
-        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-        </svg>
+        <img src="${data.photo}" alt="${data.name}" width="140" height="140">
         <h2 class="fw-normal">${data.name}</h2>
         <p>${data.description}</p>
     `;
@@ -39,3 +36,8 @@ function appendData(data) {
 }
 
 fetchData();
+
+{/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+<title>${data.name}</title>
+<rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+</svg> */}
