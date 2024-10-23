@@ -35,11 +35,13 @@ body {
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
+    display: block;
   }
   /* rtl:begin:ignore */
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+    display: block;
   }
   /* rtl:end:ignore */
   
