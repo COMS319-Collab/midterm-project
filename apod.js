@@ -2,7 +2,7 @@
 
 const fetchApod = async () => {
     // Normally, I wouldn't hardcode an API key, but for the sake of you being able to run locally I have to.
-    const url = `https://api.nasa.gov/planetary/apod?api_key=lj0zYFMC7YrzbbHPcDFsTd0WUspXyr1rQlvBDR6v&count=1`;
+    const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
     const response = await fetch(url);
     const data = await response.json();
     return data;
